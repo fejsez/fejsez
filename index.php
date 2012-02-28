@@ -11,6 +11,14 @@
 			}
 		});
    	</script>
+   	<script type="text/javascript">
+ function unhide(divID) {
+ var item = document.getElementById(divID);
+ if (item) {
+ item.className=(item.className=='hidden')?'unhidden':'hidden';
+ }
+ }
+ </script>
    	
    	<title>dog is my co-pilot. seriously have you seen Garbanzo?</title>
   <link href="mine.css" rel="stylesheet" type="text/css" />
@@ -20,14 +28,14 @@
 <div id="container">
 <div id="dbad"> 
 <h1>fejsez.com<h1>
-<a id="blog1" href="javascript:showonlyone('newboxes1');" ><img width="200" height="200" src="/blog.jpg" /></a>
-<a id="blur1" href="javascript:showonlyone('newboxes2');" ><img width="200" height="200" src="/blur.jpg" /></a>
-<a id="photos1" href="javascript:showonlyone('newboxes4');" ><img width="200" height="200" src="/tracks.jpg" /></a>
-<a id="garb1" href="javascript:showonlyone('newboxes3');" ><img width="200" height="200" src="/garb.jpg" /></a>
-<div id="newboxes1"><a href="http://blog.fejsez.com"> BLOG</a></div>
-<div id="newboxes2"> <a href="http://bike.fejsez.com">BIKE</a></div>
-<div id="newboxes3"> <a href="http://photos.fejsez.com">BLUR</a></div>
-<div id="newboxes4"> <a href="http://about.me/fejsez">ABOUT</a></div>
+<a id="blog1" href="javascript:unhide('newboxes1');" ><img width="200" height="200" src="/blog.jpg" /></a>
+<a id="blur1" href="javascript:unhide('newboxes2');" ><img width="200" height="200" src="/blur.jpg" /></a>
+<a id="photos1" href="javascript:unhide('newboxes4');" ><img width="200" height="200" src="/tracks.jpg" /></a>
+<a id="garb1" href="javascript:unhide('newboxes3');" ><img width="200" height="200" src="/garb.jpg" /></a>
+<div id="newboxes1" class="hidden"><a href="http://blog.fejsez.com"> BLOG</a></div>
+<div id="newboxes2" class="hidden"> <a href="http://bike.fejsez.com">BIKE</a></div>
+<div id="newboxes3" class="hidden"> <a href="http://photos.fejsez.com">BLUR</a></div>
+<div id="newboxes4" class="hidden"> <a href="http://about.me/fejsez">ABOUT</a></div>
 
 </div>
 </div>
