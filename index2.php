@@ -7,7 +7,7 @@
    	<script type="text/javascript" charset="utf-8">
 		window.addEvents({
 			domready: function(){
-				new ElementStacks($$('img.rap'), $('wrapper'));
+				new ElementStacks($$('img'), $('wrapper'));
 			}
 		});
    	</script>
@@ -28,15 +28,18 @@
 <div id="container">
 <div id="dbad"> 
 <h1>fejsez.com</h1>
-<a id="blog1" href="javascript:unhide('newboxes3');" ><img class="rap" width="200" height="200" src="/blog.jpg" /></a>
-<a id="blur1" href="javascript:unhide('newboxes4');" ><img class="rap" width="200" height="200" src="/blur.jpg" /></a>
-<a id="photos1" href="javascript:unhide('newboxes2');" ><img class="rap" width="200" height="200" src="/tracks.jpg" /></a>
-<a id="garb1" href="javascript:unhide('newboxes1');" ><img class="rap" width="200" height="200" src="/garb.jpg" /></a>
+<div id="imagewrapper">
+<a id="blog1" href="javascript:unhide('newboxes3');" ><img width="200" height="200" src="/blog.jpg" /></a>
+<a id="blur1" href="javascript:unhide('newboxes4');" ><img width="200" height="200" src="/blur.jpg" /></a>
+<a id="photos1" href="javascript:unhide('newboxes2');" ><img width="200" height="200" src="/tracks.jpg" /></a>
+<a id="garb1" href="javascript:unhide('newboxes1');" ><img width="200" height="200" src="/garb.jpg" /></a>
+<div id="linkwrapper">
 <div id="newboxes1" class="hidden"><a href="http://about.me/fejsez">ABOUT</a></div>
 <div id="newboxes2" class="hidden"> <a href="http://bike.fejsez.com">BIKE</a></div>
 <div id="newboxes3" class="hidden"> <a href="http://blog.fejsez.com"> BLOG</a></div>
 <div id="newboxes4" class="hidden"> <a href="http://photos.fejsez.com">BLUR</a></div>
-
+</div>
+</div>
 </div>
 </div>
 </div>

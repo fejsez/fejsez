@@ -1,0 +1,8 @@
+Div wrapper around images. 
+
+no position absolute (use margins/padding) (can change sitemeter position)
+fix inline script. 
+
+
+/* debugger; */
+console.log()
