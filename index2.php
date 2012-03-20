@@ -7,11 +7,11 @@
    	<script type="text/javascript" charset="utf-8">
 		window.addEvents({
 			domready: function(){
-				new ElementStacks($$('img'), $('wrapper'));
+				new ElementStacks($$('img.rap'), $('wrapper'));
 			}
 		});
    	</script>
-   	<script type="text/javascript">
+   		<script type="text/javascript">
  function unhide(divID) {
  var item = document.getElementById(divID);
  if (item) {
@@ -19,21 +19,30 @@
  }
  }
  </script>
-   	
+<!-- attempting to take inline out
+
+   	<script type="text/javascript" charset="utf-8">
+ 		window.addEvents({
+			domready: function(){
+				new myunhide($$('newboxes'), $('1'));
+			}
+		});
+ </script>
+ -->
+
    	<title>dog is my co-pilot. seriously have you seen Garbanzo?</title>
-  <link href="mine.css" rel="stylesheet" type="text/css" />
+  <link href="mine1.css" rel="stylesheet" type="text/css" />
   </head>
  <body>
-<div id="outer">
-<div id="container">
-<div id="dbad"> 
+ <div id="page">
+ <div id="container">
+<div id="content"> 
 <h1>fejsez.com</h1>
-<div id="imagewrapper">
-<a id="blog1" href="javascript:unhide('newboxes3');" ><img width="200" height="200" src="/blog.jpg" /></a>
-<a id="blur1" href="javascript:unhide('newboxes4');" ><img width="200" height="200" src="/blur.jpg" /></a>
-<a id="photos1" href="javascript:unhide('newboxes2');" ><img width="200" height="200" src="/tracks.jpg" /></a>
-<a id="garb1" href="javascript:unhide('newboxes1');" ><img width="200" height="200" src="/garb.jpg" /></a>
-<div id="linkwrapper">
+<div id=wrapper>
+<a id="blog1" href="javascript:unhide('newboxes3');" ><img class="rap" width="200" height="200" src="/blog.jpg" /></a>
+<a id="blur1" href="javascript:unhide('newboxes4');" ><img class="rap" width="200" height="200" src="/blur.jpg" /></a>
+<a id="photos1" href="javascript:unhide('newboxes2');" ><img class="rap" width="200" height="200" src="/tracks.jpg" /></a>
+<a id="garb1" href="javascript:unhide('newboxes1');" ><img class="rap" width="200" height="200" src="/garb.jpg" /></a>
 <div id="newboxes1" class="hidden"><a href="http://about.me/fejsez">ABOUT</a></div>
 <div id="newboxes2" class="hidden"> <a href="http://bike.fejsez.com">BIKE</a></div>
 <div id="newboxes3" class="hidden"> <a href="http://blog.fejsez.com"> BLOG</a></div>
@@ -42,16 +51,5 @@
 </div>
 </div>
 </div>
-</div>
-<!-- Site Meter -->
-<script type="text/javascript" src="http://sm4.sitemeter.com/js/counter.js?site=sm4fejsez">
-</script>
-<noscript>
-<a href="http://sm4.sitemeter.com/stats.asp?site=sm4fejsez" style="font-size: 5pt;" target="_top">
-sitemeter.com</a>
-</noscript>
-<!-- Copyright (c)2009 Site Meter -->
-
-
-
+</body>
 </html>

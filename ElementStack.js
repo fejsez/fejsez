@@ -6,7 +6,7 @@ license: MIT-style license.
 authors:
  - Oskar Krawczyk (http://nouincolor.com/)
 requires: 
-  core:1.2.4: 
+  core:1.2.3: 
   - Class.Extras
   - Array
   - Function
@@ -18,8 +18,6 @@ requires:
 provides: [ElementStacks]
 ...
 */
-
-// bigger demo: http://nouincolor.com/ElementStack/
 
 var ElementStacks = new Class({
     Implements: [Options],
@@ -79,14 +77,6 @@ var ElementStacks = new Class({
                     top: el.retrieve('default:coords').y + rand,
                     left: el.retrieve('default:coords').x + rand
                 });
-                
-                if (mode === 'in'){
-                    el.setStyle('z-index', 100);
-                } else {
-                    (function(){
-                        els.setStyle('z-index', 10);
-                    }).delay(that.options.delay * (els.length * 2));
-                }
             }).delay(that.options.delay * i, stackItem);
         });
     },
@@ -111,4 +101,5 @@ var ElementStacks = new Class({
         });
     }
 });
-new ElementStacks($$('img'), $('dbad'));
+
+new ElementStacks($$('img'), $('wrapper'));
